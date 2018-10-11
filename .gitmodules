@@ -1,3 +1,4 @@
-[submodule "pivx_light_wallets_core"]
-	path = pivx_light_wallets_core
-	url = https://github.com/furszy/pivx_light_wallets_core.git
+[submodule "obsrj"]
+	path = obsrj
+	url = https://github.com/LooorTor/obsrj.git
+	branch = master

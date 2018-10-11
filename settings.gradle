@@ -1,2 +1,3 @@
-include ':app', ':pivx_light_wallets_core'
+include ':obsrj', ':app', ':obsr-light-wallets-core'
+project(':obsrj').projectDir = new File('obsrj/core')
 

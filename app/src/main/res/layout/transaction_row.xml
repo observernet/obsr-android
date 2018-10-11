@@ -23,10 +23,10 @@
 
         <ImageView
             android:id="@+id/imageView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@mipmap/ic_transaction_send"
-            android:paddingRight="14dp"
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            tools:src="@drawable/ic_transaction_send"
+            android:layout_marginRight="14dp"
             />
 
 
@@ -47,7 +47,7 @@
                 android:maxWidth="180dp"
                 tools:text="DAE9XiuuCYgbGC2aTEZT8jnGStv3eWrWDw"
                 android:hint="Error"
-                android:textColor="@color/bgPurple"
+                android:textColor="@color/colorPrimary"
                 android:textSize="16sp" />
 
             <TextView
@@ -89,7 +89,7 @@
                 android:layout_gravity="end"
                 android:gravity="end"
                 android:layout_height="wrap_content"
-                android:text="0.00203 PIV"
+                android:text="0.00203 OBSR"
                 android:textColor="#404040"
                 android:textSize="18sp" />
 

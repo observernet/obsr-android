@@ -9,7 +9,7 @@
     <fragment
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:name="pivx.org.pivxwallet.ui.transaction_send_activity.AmountInputFragment"
+        android:name="com.obsr.wallet.ui.transaction_send_activity.AmountInputFragment"
         android:id="@+id/fragment_amount"
         />
 
@@ -67,7 +67,7 @@
             android:gravity="center"
             android:layout_gravity="bottom"
             android:text="@string/btn_request"
-            android:textColor="@color/textColorPurple"
+            android:textColor="@color/colorPrimary"
             android:textSize="14sp" />
 
 

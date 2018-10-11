@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="pivx.org.pivxwallet">
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.obsr.wallet">
 
     <uses-permission android:name="android.permission.CAMERA"/>
     <uses-permission android:name="android.permission.INTERNET"/>
@@ -12,11 +13,12 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
-        android:label="@string/app_name"
+        android:icon="@drawable/ic_coin_launcher"
+        android:label="${APP_NAME}"
+        tools:replace="android:label"
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
-        android:name=".PivxApplication">
+        android:name=".CoinApplication">
         <activity android:name=".ui.splash_activity.SplashActivity"  android:screenOrientation="portrait">
 
         </activity>
@@ -93,17 +95,19 @@
             android:taskAffinity=""
             android:theme="@android:style/Theme.Dialog" />
 
-        <service android:name=".service.PivxWalletService" />
+        <service android:name=".service.CoinWalletService" />
 
         <provider
             android:name="android.support.v4.content.FileProvider"
-            android:authorities="pivx.org.pivxwallet.myfileprovider"
+            android:authorities="${applicationId}.myfileprovider"
             android:exported="false"
             android:grantUriPermissions="true">
             <meta-data
                 android:name="android.support.FILE_PROVIDER_PATHS"
                 android:resource="@xml/file_provider_paths" />
         </provider>
+
+        <activity android:name=".ui.transaction_detail_activity.TransactionIdDetailActivity" />
 
     </application>
 
