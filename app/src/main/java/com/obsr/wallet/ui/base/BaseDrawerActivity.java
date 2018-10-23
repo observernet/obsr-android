@@ -235,12 +235,12 @@ public class BaseDrawerActivity extends CoinActivity implements NavigationView.O
                     break;
                 case SYNCING:
                     text = getString(R.string.syncing)+" "+progress+"%, Height "+ obsrModule.getChainHeight();
-                    color = Color.parseColor("#f6a623");
+                    color = Color.parseColor("#ffffff");
                     imgSrc = R.drawable.ic_header_unsynced;
                     break;
                 case NOT_CONNECTION:
                     text = getString(R.string.not_connection);
-                    color = Color.parseColor("#f6a623");
+                    color = Color.parseColor("#ffffff");
                     imgSrc = R.drawable.ic_header_unsynced;
                     break;
             }
