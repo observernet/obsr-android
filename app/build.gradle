@@ -44,7 +44,7 @@ android {
             dimension "env"
             addManifestPlaceholders([APP_NAME: "@string/app_name"])
             versionNameSuffix "-obsrprod"
-            resValue 'color', "colorPrimary", "#2986ea"
+            resValue 'color', "colorPrimary", "#4f93c1"
             resValue 'color', "colorPrimaryLight", "#59a7f9"
             resValue 'color', "colorPrimaryDark", "#1561b2"
         }
