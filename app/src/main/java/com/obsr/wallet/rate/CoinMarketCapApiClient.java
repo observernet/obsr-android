@@ -46,7 +46,7 @@ public class CoinMarketCapApiClient {
     }
 
     public ObsrMarket getCoinPrice() throws RequestCoinRateException {
-        try {
+        //try {
             ObsrMarket obsrMarket = null;
             //String url = this.URL + "ticker/obsr/";
             //HttpResponse httpResponse = get(url);
@@ -74,16 +74,16 @@ public class CoinMarketCapApiClient {
                     1000
             );
             return obsrMarket;
-        } catch (ClientProtocolException e) {
-            e.printStackTrace();
-            throw new RequestCoinRateException(e);
-        } catch (IOException e) {
-            e.printStackTrace();
-            throw new RequestCoinRateException(e);
-        } catch (JSONException e) {
-            e.printStackTrace();
-            throw new RequestCoinRateException(e);
-        }
+        //} catch (ClientProtocolException e) {
+        //    e.printStackTrace();
+        //    throw new RequestCoinRateException(e);
+        //} catch (IOException e) {
+        //    e.printStackTrace();
+        //    throw new RequestCoinRateException(e);
+        //} catch (JSONException e) {
+        //    e.printStackTrace();
+        //    throw new RequestCoinRateException(e);
+        //}
     }
 
     public static HttpResponse get(String url) throws IOException {
