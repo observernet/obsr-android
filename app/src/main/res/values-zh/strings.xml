@@ -222,6 +222,7 @@
     <string name="set_default">设置默认值</string>
     <string name="delete_addresses">删除地址</string>
     <string name="sync">已同步</string>
+    <string name="height">高度</string>
     <string name="syncing">同步中</string>
     <string name="not_connection">无连接</string>
     <string name="confimations">确认</string>

@@ -223,6 +223,7 @@
     <string name="delete_addresses">DELETE ADDRESSES</string>
     <string name="sync">Synced</string>
     <string name="syncing">Syncing</string>
+    <string name="height">Height</string>
     <string name="not_connection">No connection</string>
     <string name="confimations">Confirmations</string>
     <string name="multiple_address_send">Sending to %d addresses</string>

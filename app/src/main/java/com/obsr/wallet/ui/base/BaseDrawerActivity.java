@@ -229,12 +229,12 @@ public class BaseDrawerActivity extends CoinActivity implements NavigationView.O
             double progress = calculateBlockchainSyncProgress();
             switch (blockchainState) {
                 case SYNC:
-                    text = getString(R.string.sync);
+                    text = getString(R.string.sync)+", "+getString(R.string.height) + " "+ obsrModule.getChainHeight();;
                     color = Color.parseColor("#ffffffff");
                     imgSrc = 0;
                     break;
                 case SYNCING:
-                    text = getString(R.string.syncing)+" "+progress+"%, Height "+ obsrModule.getChainHeight();
+                    text = getString(R.string.syncing)+" "+progress+"%, "+getString(R.string.height) + " "+ obsrModule.getChainHeight();
                     color = Color.parseColor("#ffffff");
                     imgSrc = R.drawable.ic_header_unsynced;
                     break;
