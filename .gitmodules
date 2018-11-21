@@ -1,4 +1,4 @@
 [submodule "obsrj"]
 	path = obsrj
-	url = https://github.com/LooorTor/obsrj.git
+    url=https://github.com/observernet/obsrj.git
 	branch = master
