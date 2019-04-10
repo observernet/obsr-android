@@ -46,44 +46,37 @@ public class CoinMarketCapApiClient {
     }
 
     public ObsrMarket getCoinPrice() throws RequestCoinRateException {
-        //try {
+        try {
             ObsrMarket obsrMarket = null;
-            //String url = this.URL + "ticker/obsr/";
-            //HttpResponse httpResponse = get(url);
-            //// receive response as inputStream
-            //InputStream inputStream = httpResponse.getEntity().getContent();
-            //String result = null;
-            //if (inputStream != null)
-            //    result = convertInputStreamToString(inputStream);
-            //if (httpResponse.getStatusLine().getStatusCode()==200){
-            //    JSONArray jsonArray = new JSONArray(result);
-            //    JSONObject jsonObject = jsonArray.getJSONObject(0);
-            //    obsrMarket = new ObsrMarket(
-            //            new BigDecimal(jsonObject.getString("price_usd")),
-            //            new BigDecimal(jsonObject.getString("price_btc")),
-            //            new BigDecimal(jsonObject.getString("market_cap_usd")),
-            //            new BigDecimal(jsonObject.getString("total_supply")),
-            //            jsonObject.getInt("rank")
-            //    );
-            //}
-            obsrMarket = new CoinMarketCapApiClient.ObsrMarket(
-                    new BigDecimal("0.01"),
-                    new BigDecimal("0.00000160"),
-                    new BigDecimal("112295839.10"),
-                    new BigDecimal("11229583910"),
-                    1000
-            );
+            String url = this.URL + "ticker/observer/";
+            HttpResponse httpResponse = get(url);
+            // receive response as inputStream
+            InputStream inputStream = httpResponse.getEntity().getContent();
+            String result = null;
+            if (inputStream != null)
+                result = convertInputStreamToString(inputStream);
+            if (httpResponse.getStatusLine().getStatusCode()==200){
+                JSONArray jsonArray = new JSONArray(result);
+                JSONObject jsonObject = jsonArray.getJSONObject(0);
+                obsrMarket = new ObsrMarket(
+                        new BigDecimal(jsonObject.getString("price_usd")),
+                        new BigDecimal(jsonObject.getString("price_btc")),
+                        new BigDecimal(jsonObject.getString("market_cap_usd")),
+                        new BigDecimal(jsonObject.getString("total_supply")),
+                        jsonObject.getInt("rank")
+                );
+            }
             return obsrMarket;
-        //} catch (ClientProtocolException e) {
-        //    e.printStackTrace();
-        //    throw new RequestCoinRateException(e);
-        //} catch (IOException e) {
-        //    e.printStackTrace();
-        //    throw new RequestCoinRateException(e);
-        //} catch (JSONException e) {
-        //    e.printStackTrace();
-        //    throw new RequestCoinRateException(e);
-        //}
+        } catch (ClientProtocolException e) {
+            e.printStackTrace();
+            throw new RequestCoinRateException(e);
+        } catch (IOException e) {
+            e.printStackTrace();
+            throw new RequestCoinRateException(e);
+        } catch (JSONException e) {
+            e.printStackTrace();
+            throw new RequestCoinRateException(e);
+        }
     }
 
     public static HttpResponse get(String url) throws IOException {
