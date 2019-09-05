@@ -11,11 +11,11 @@ android {
     buildToolsVersion '27.0.3'
     useLibrary 'org.apache.http.legacy'
     defaultConfig {
-        applicationId "com.obsr.wallet"
+        applicationId "com.observer.wallet"
         minSdkVersion 21
         targetSdkVersion 25
-        versionCode 6
-        versionName "1.0.1-beta.2"
+        versionCode 7
+        versionName "1.0.1-beta.3"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
         archivesBaseName = "OBSRWallet_v-$versionName-${releaseTime()}"
         multiDexEnabled true

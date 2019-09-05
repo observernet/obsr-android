@@ -1,4 +1,4 @@
-package com.obsr.wallet
+package com.observer.wallet
 
 import org.junit.Assert.assertEquals
 import org.junit.Test

@@ -1,4 +1,4 @@
-package com.obsr.wallet;
+package com.observer.wallet;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("com.obsr.wallet", appContext.getPackageName());
+        assertEquals("com.observer.wallet", appContext.getPackageName());
     }
 }
