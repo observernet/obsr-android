@@ -3,7 +3,7 @@ package global;
 import android.os.Environment;
 import android.text.format.DateUtils;
 
-import com.obsr.wallet.core.BuildConfig;
+import com.observer.wallet.core.BuildConfig;
 
 import org.obsrj.core.Context;
 import org.obsrj.core.NetworkParameters;

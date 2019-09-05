@@ -10,7 +10,7 @@
     android:paddingRight="12dp"
     android:paddingTop="20dp"
     android:gravity="center"
-    tools:context="com.obsr.wallet.ui.base.BaseDrawerActivity">
+    tools:context="com.observer.wallet.ui.base.BaseDrawerActivity">
 
 
     <ImageView
